@@ -37,12 +37,12 @@ for row in df.itertuples():
     seqid = row[1]
     position = row[2]
     black = row[3]
-    white = row[4]
+    grey = row[4]
     this_y = y_val_dict[seqid]
     if black == 1:
         clr = "black"
         ax1.add_patch(patches.Rectangle((position_mapping_dct[position] + 0.1, this_y + 0.1), 0.8, 0.8, facecolor=clr))
-    if white == 1:
+    if grey == 1:
         clr = "lightgrey"
         ax1.add_patch(patches.Rectangle((position_mapping_dct[position] + 0.1, this_y + 0.1), 0.8, 0.8, facecolor=clr))
 

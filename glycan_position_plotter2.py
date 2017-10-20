@@ -34,8 +34,8 @@ clr = "black"
 all_black_marks = df[df['black']==1]
 print(all_black_marks)
 
-all_white_marks = df[df['white']==1]
-print(all_white_marks)
+all_grey_marks = df[df['grey']==1]
+print(all_grey_marks)
 
 black_x, black_y, grey_x, grey_y = [], [], [], []
 for row in df.itertuples():
@@ -43,7 +43,7 @@ for row in df.itertuples():
     seqid = row[1]
     position = row[2]
     black = row[3]
-    white = row[4]
+    grey = row[4]
     this_y = y_val_dict[seqid]
     this_x = position_mapping_dct[position]
 
