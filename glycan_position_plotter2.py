@@ -105,7 +105,7 @@ if __name__ == "__main__":
     # in_file = "generalized_plot_source-lots_more_data.csv"
     # in_file = "generalized_plot_source-lots_of_data.csv"
     # in_file = "generalized_plot_source.csv"
-    in_file = "generalized_plot_source-medium.csv"
+    #in_file = "generalized_plot_source-medium.csv"
 
     main(in_file, wd)
 
